@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      background-color: #fff;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label,legend {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <h2>Employee Registration Form</h2>
+
+  <form action="#" method="post">
+    <!-- Personal Information -->
+    <label for="empId">Employee ID</label>
+    <input type="text" id="empId" name="empId" required>
+
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" required>
+      <option value="">--Select Gender--</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <!-- Contact Info -->
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <!-- Job Details -->
+    <label for="department">Department</label>
+    <select id="department" name="department" required>
+    <optgroup>Social careers>
+      <option value="">--Select Department--</option>
+      <option value="HR">HR</option>
+      <option value="Finance">Finance</option>
+      <option value="IT">IT</option>
+      <option value="Marketing">Marketing</option>
+    </select>
+
+    <label for="doj">Date of Joining</label>
+    <input type="date" id="doj" name="doj" required>
+
+    <legend for="position">Position</legend>
+    <select id="position" name="position" required>
+    <option value="">--Select position--</option>
+      <option value="Beginner">Beginner</option>
+      <option value="Amateur">Amateur</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Professional">Professional</option>
+    </select>
+
+    <label for="salary">Salary (USD)</label>
+    <input type="number" id="salary" name="salary" step="100" min="0" required>
+
+    <!-- Submit -->
+    <button type="submit">Register Employee</button>
+  </form>
+
+</body>
+</html>
