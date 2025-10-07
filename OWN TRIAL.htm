@@ -1,0 +1,97 @@
+<!doctype html>
+<htm lang="en"
+<head>
+<title>FORMS FINAL</title>
+<meta charset="UTF-8">
+<h2>WONDERHOO.COM</br>
+<img src="camero.png" alt="Logo" width="150" height="90"></h2>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      background-color: #fff;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label,legend {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+<form action="get.html" method="post">
+<!--Personal Information-->
+<label for="Name">NAME</label>
+<input type="text" id="Name" name="Name" Required>
+
+<label for="Phone">PHONE</label>
+<input type="number" id="phone" name="phone" Required>
+
+<label for="gender">GENDER</label>
+<select id="gender" name="gender" Required>
+<option value="">--select gender--</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Other</option>
+</select>
+
+<label for="CR">COUNTRY OF RESIDENCY</label>
+<select id="Cr" name="cr" Required>
+<optgroup label="East Africa">
+<option value="">--select country--</option>
+<option value="Kenya">Kenya</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Uganda">Tanzania</option>
+</optgroup>
+
+<optgroup label="West Africa">
+<option value="Coted'Ivore">Coted'Ivore</option>
+<option value="Mali">Mali</option>
+<option value="Senegal">Senegal</option>
+</optgroup>
+
+<optgroup label="North west Africa">
+<option value="Eritrea">Eritrea</option>
+<option value="Somalia">Somalia</option>
+<option value="Ethiopia">Senegal</option>
+</optgroup>
+</select>
+
+<button type="submit">LOGIN</button>
+</form>
+</body>
+</html>
+
